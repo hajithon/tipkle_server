@@ -15,8 +15,8 @@ import tipit.tipit.domain.user.repository.UserRepository;
 import tipit.tipit.domain.user.entity.User;
 import java.util.Base64;
 import java.util.Date;
-import tipit.tipit.global.error.error.exception.CustomException;
-import tipit.tipit.global.error.error.exception.ErrorCode;
+import tipit.tipit.global.error.exception.CustomException;
+import tipit.tipit.global.error.exception.ErrorCode;
 @Service @RequiredArgsConstructor
 public class TokenService {
 

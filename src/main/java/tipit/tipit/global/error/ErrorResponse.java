@@ -1,9 +1,9 @@
-package tipit.tipit.global.error.error;
+package tipit.tipit.global.error;
 
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import tipit.tipit.global.error.error.exception.ErrorCode;
+import tipit.tipit.global.error.exception.ErrorCode;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)

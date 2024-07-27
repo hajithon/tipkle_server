@@ -1,4 +1,4 @@
-package tipit.tipit.global.error.error;
+package tipit.tipit.global.error;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
-import tipit.tipit.global.error.error.exception.CustomException;
-import tipit.tipit.global.error.error.exception.ErrorCode;
+import tipit.tipit.global.error.exception.CustomException;
+import tipit.tipit.global.error.exception.ErrorCode;
 
 @Slf4j
 @RestControllerAdvice

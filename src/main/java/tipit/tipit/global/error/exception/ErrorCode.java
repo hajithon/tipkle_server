@@ -1,4 +1,4 @@
-package tipit.tipit.global.error.error.exception;
+package tipit.tipit.global.error.exception;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

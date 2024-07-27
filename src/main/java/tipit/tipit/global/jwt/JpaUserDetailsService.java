@@ -6,9 +6,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 import tipit.tipit.domain.user.repository.UserRepository;
-import tipit.tipit.global.error.error.exception.CustomException;
+import tipit.tipit.global.error.exception.CustomException;
 
-import static tipit.tipit.global.error.error.exception.ErrorCode.USER_NOT_FOUND;
+import static tipit.tipit.global.error.exception.ErrorCode.USER_NOT_FOUND;
 
 @Service
 @RequiredArgsConstructor
