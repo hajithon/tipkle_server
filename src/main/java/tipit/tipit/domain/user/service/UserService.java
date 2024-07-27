@@ -26,5 +26,9 @@ public class UserService {
         return GetUserInfo.of(user);
 
     }
+    public User getUserById(Long userId) {
+        return userRepository.findById(userId)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found with id: " + userId));
+    }
 }
 

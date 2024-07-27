@@ -9,6 +9,7 @@ import tipit.tipit.global.jwt.TokenResponse;
 import tipit.tipit.global.oauth.NaverUserService;
 import tipit.tipit.global.response.SuccessResponse;
 import tipit.tipit.domain.user.dto.GetUserInfo;
+import tipit.tipit.domain.user.entity.User;
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
@@ -27,7 +28,10 @@ public class UserController {
     }
 
     @GetMapping("/userInfo")
-    public SuccessResponse<GetUserInfo> getUserInfo() {
-        return SuccessResponse.success(userService.getUserInfo());
+    public SuccessResponse<GetUserInfo> getUserInfo(@RequestParam Long userId) {
+        User user = userService.getUserById(userId);
+        return SuccessResponse.success(GetUserInfo.of(user));
     }
+
+
 }
