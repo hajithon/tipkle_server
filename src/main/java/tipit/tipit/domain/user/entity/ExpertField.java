@@ -5,5 +5,6 @@ public enum ExpertField {
     ART,
     FINANCE,
     FOOD,
-    TRAVEL
+    TRAVEL,
+    READY
 }
