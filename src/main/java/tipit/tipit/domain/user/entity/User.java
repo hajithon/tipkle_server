@@ -23,15 +23,16 @@ public class User {
     private String providerId;
     @Enumerated(EnumType.STRING)
     private ExpertField expertField;
-
+    private String password;
     private String nickname;
 
     @Builder
-    public User(Long id, OAuthProvider oAuthProvider,String providerId, ExpertField expertField, String nickname) {
+    public User(Long id, OAuthProvider oAuthProvider,String providerId, ExpertField expertField, String password, String nickname) {
         this.id = id;
         this.oAuthProvider = oAuthProvider;
         this.providerId = providerId;
         this.expertField = expertField;
+        this.password = password;
         this.nickname = nickname;
     }
 }

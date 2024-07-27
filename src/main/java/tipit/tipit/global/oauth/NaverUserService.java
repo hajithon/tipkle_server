@@ -64,7 +64,9 @@ public class NaverUserService {
             // User 엔티티를 생성하여 DB에 저장
             naverUser = User.builder()
                     .oAuthProvider(OAuthProvider.NAVER)
+                    .providerId(providerId)
                     .nickname(naverUserInfo.getNickname())
+                    .password(password)
                     .build();
             userRepository.save(naverUser);
             return Pair.of(naverUser, true);
